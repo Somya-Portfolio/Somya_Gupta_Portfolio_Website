@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -11,21 +14,38 @@
 }
 
 main{
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .navbar{
-    /* background-color: rgb(35, 32, 27); */
     background-color: #282936;
-    color: white;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    z-index:99;
 }
-.nav-item:hover{
-  opacity: 0.7;
+.nav-link{
+  color: #25a554;
+  
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover{
+  color: #fddb3a;
 }
 .navbarLogo{
-  font-family: cursive;
-  color: white;
+  font-family: 'Tangerine', cursive;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #25a554;
 }
+.navbarLogo:hover{
+  color: #fddb3a;
+}
+
 
 #myBtn {
     position: fixed; /* Fixed/sticky position */
@@ -37,7 +57,9 @@ main{
     color: black; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
 }
-
+#myBtn:hover{
+  opacity: 0.8;
+}
   .skills {
     max-width: 60%;
     margin: auto;
@@ -65,8 +87,7 @@ main{
     padding: 2rem;
   }
   .skill-container:hover{
-    background-color: rgb(206, 74, 179);
-    opacity: 0.8;
+    background-color: #25a554;
   }
   
   .icon {
@@ -80,7 +101,7 @@ main{
     max-width: 80%;
     margin: auto;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
   }
   .project-wrapper{
@@ -155,12 +176,34 @@ main{
     align-items: center;
 }
 
-@media (min-width: 450px) and (max-width: 600px){
+
+@media (min-width: 360px) and (max-width: 700px){
+  main{
+    margin-top: 1rem;
+  }
+  .project-title{
+    font-size: 0.9rem;
+  }
   .project-details{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .project-container {
     width: 27rem;
-    height: 25rem;
+    height: 22rem;
+  }
+  .navbarLogo{
+    margin: auto;
+  }
+  .nav{
+    margin: auto;
+  }
+  .nav-link{
+    font-size: 0.45rem;
+  }
+  .navbarLogo{
+    font-size: 1rem;
+  }
+  .publication-container button{
+    font-size: 0.7rem;
   }
 }
