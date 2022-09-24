@@ -87,7 +87,7 @@ main{
     padding: 2rem;
   }
   .skill-container:hover{
-    background-color: #25a554;
+    background-color: #fddb3a;
   }
   
   .icon {
@@ -134,7 +134,7 @@ main{
   .project-details{
     margin-top: 0.5rem;
     text-align: justify;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   
   
@@ -164,6 +164,9 @@ main{
   .publication-container a{
     text-decoration: none;
     color: black;
+  }
+  .publication-container button{
+    font-size: 1rem;
   }
   .publication-container a:hover{
     text-decoration: underline;
